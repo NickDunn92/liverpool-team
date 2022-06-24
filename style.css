@@ -1,11 +1,76 @@
+body {
+  background-color: #fc626a;
+}
+
 img {
-  height: 250px;
-  width: 25%;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #bbb;
 }
 
 .container {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  justify-items: center;
 }
 
+.defender {
+  height: 400px;
+  width: 450px;
+}
+
+.midfielder {
+  height: 400px;
+  width: 450px;
+}
+
+.forward {
+  height: 400px;
+  width: 450px;
+}
+
+.alisson {
+  grid-column: 1/-1;
+}
+
+.trent {
+  grid-column: 1/3;
+}
+
+.konate {
+  grid-column: 3/5;
+}
+
+.virgil {
+  grid-column: 5/7;
+}
+
+.robbo {
+  grid-column: 7/9;
+}
+
+.hendo {
+  grid-column: 1/3;
+}
+
+.fabinho {
+  grid-column: 3/7;
+}
+
+.thiago {
+  grid-column: 7/9;
+}
+
+.salah {
+  grid-column: 1/3;
+}
+
+.nunez {
+  grid-column: 3/7;
+}
+
+.diaz {
+  grid-column: 7/9;
+}
